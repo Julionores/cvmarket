@@ -141,6 +141,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR.joinpath('static/')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -156,11 +157,10 @@ LOGOUT_REDIRECT_URL = LOGIN_URL
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR.joinpath('media/')
 
+
 #
 # Google Drive Storage Settings
 #
 GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE = os.path.join(BASE_DIR, 'cvmarketstorage-87a2b946f27b.json')
 GOOGLE_DRIVE_STORAGE_MEDIA_ROOT = 'media/' # OPTIONAL
-
-
 
