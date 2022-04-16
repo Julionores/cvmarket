@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Flux de cv</h2>
+    <div class="grid-container">
+        {% for cv in page_obj %}
+            {% include 'cvblog/partials/cv_snippet.html' %}
+        {% endfor %}
+    </div>
+    {% include 'partials/page_navigator.html' %}
+{% endblock content %}

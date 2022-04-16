@@ -1,0 +1,17 @@
+{% load blog_extras %}
+<div class="post">
+    <div class="post">
+        <a href="{% url 'view_lettre' lettre.id %}">
+            <h4>Objet : {{ lettre.objet }} </h4>
+            <p><strong>Destinataire : {{ lettre.destinateur }}</strong></p>
+
+            {% if lettre.date_created == lettre.date_edit  %}
+            <p>{{ lettre.date_created|get_posted_at_display }}</p>
+        {% else %}
+            <p>{{ lettre.date_created|get_posted_at_display }}</p>
+            <p>{{ lettre.date_edit|get_modifie_at_display }}</p> 
+        {% endif %}
+           
+        </a>
+    </div>
+</div>

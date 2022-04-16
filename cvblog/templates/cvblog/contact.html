@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load blog_extras %}
+{% block content %}
+    <h2>Contact</h2>
+    <hr>
+    <form method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <button type="submit" >Valider</button>
+    </form>
+    <hr>
+
+    {% for contact in page_obj %}
+      {% if contact.nomuser == 'Administrateur' %}
+        <p>User: {{ contact.nomuser }}</p>
+        <p>Message: {{ contact.message }}</p>
+        {% if contact.date_created == contact.date_edit  %}
+            <p>{{ contact.date_created|get_posted_at_display }}</p>
+        {% else %}
+            <p>{{ contact.date_created|get_posted_at_display }}</p>
+            <p>{{ contact.date_edit|get_modifie_at_display }}</p> 
+        {% endif %}
+        <hr>
+       {% else %}
+        <p><a href="{% url 'edit_contact' contact.id %}">Modifier le contact</a></p>
+        <p>User: {{ contact.nomuser }}</p>
+        <p>Message: {{ contact.message }}</p>
+        {% if contact.date_created == contact.date_edit  %}
+            <p>{{ contact.date_created|get_posted_at_display }}</p>
+        {% else %}
+            <p>{{ contact.date_created|get_posted_at_display }}</p>
+            <p>{{ contact.date_edit|get_modifie_at_display }}</p> 
+        {% endif %}
+        <hr>
+       {% endif %}
+    {% endfor %}
+    {% include 'partials/page_navigator.html' %}
+
+
+
+{% endblock content %}

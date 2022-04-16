@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Lettre motivation</h2>
+        <p><a href="{% url 'edit_lettre' lettre.id %}">Modifier le cv</a></p>
+    
+    <p>{{ lettre.ville }} , le {{lettre.date}}</p>
+{{ lettre.usercv }}
+    <p>Nom: {{ lettre.usercv.last_name }}</p>
+    <p>Prénom: {{ lettre.usercv.first_name }}</p>
+    <p>Email: {{ lettre.usercv.email }}</p>
+    <p>profession : {{ lettre.profession }}</p>
+
+    <p>destinateur: {{ lettre.destinateur }}</p>
+
+    <p>objet : {{ lettre.objet }}</p>
+    
+    <p>lettre : {{ lettre.lettre  }}</p>
+
+    <p>jointe : {{ lettre.jointe }}</p>
+
+    <p>créer le  : {{ lettre.date_created }}</p>
+    <p>modifié le  : {{ lettre.date_edit }}</p>
+
+
+
+    <form method="get" action="{% url 'some_view_lettre' lettre.id %}">
+        <button type="submit" >Imprimer</button>
+    </form>
+{% endblock content %}

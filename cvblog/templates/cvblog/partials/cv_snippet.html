@@ -1,0 +1,14 @@
+{% load blog_extras %}
+<div class="post">
+    <a href="{% url 'view_cv' cv.id %}">
+        <h4>Nom de votre cv: {{ cv.nomcv }} </h4>
+        
+        {% if cv.date_created == cv.date_edit  %}
+            <p>{{ cv.date_created|get_posted_at_display }}</p>
+        {% else %}
+            <p>{{ cv.date_created|get_posted_at_display }}</p>
+            <p>{{ cv.date_edit|get_modifie_at_display }}</p> 
+        {% endif %}
+
+    </a>
+</div>

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>{{ cv.nomcv }}</h2>
+        <p><a href="{% url 'edit_cv' cv.id %}">Modifier le cv</a></p>
+    
+    
+    <p>Nom: {{ cv.usercv.last_name }}</p>
+    <p>Prénom: {{ cv.usercv.first_name }}</p>
+    <p>Email: {{ cv.usercv.email }}</p>
+    <p>Date de Naissance: {{ cv.usercv.date_birth }}</p>
+    <p>Lieu de Naissance: {{ cv.usercv.place_birth }}</p>
+    <p>Sexe : {{ cv.sexe }}</p>
+    <p>Situation Matrimoniale: {{ cv.matrimoniale }}</p>
+    <p>Enfant : {{ cv.enfant }}</p>
+    <p>Telephone : {{ cv.telephone }}</p>
+    <p>Formation : {{ cv.formation }}</p>
+    <p>Competence : {{ cv.competence }}</p>
+    <p>Experience Académique : {{ cv.experience_A }}</p>
+    <p>Experience Professionnelle : {{ cv.experience_P }}</p>
+    <p>Langue : {{ cv.langue }}</p>
+    <p>Certifications : {{ cv.certifications }}</p>
+    <p>Reference : {{ cv.reference }}</p>
+    <p>Description : {{ cv.description }}</p>
+
+    <form method="get" action="{% url 'some_view_cv' cv.id %}">
+        <button type="submit" >Imprimer</button>
+    </form>
+{% endblock content %}

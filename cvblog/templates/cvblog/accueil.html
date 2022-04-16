@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load blog_extras %}
+{% block content %}
+    <h2>Accueil Biographie Administrateur</h2>
+
+    <div class="grid-container">
+        {% for instance in page_obj %}
+            {% if instance|model_type == 'Cv' %}
+            <div class="post">
+                <a href="{% url 'view_cv_admin' instance.id %}">
+                    <h4>Nom de votre cv : {{ instance.nomcv }} </h4>
+                    
+                    <p>Administrateur : {{ instance.usercv.username }}</p>
+                </a>
+            </div>
+            {% elif instance|model_type == 'Lettre' %}
+                
+            {% endif %}
+        {% endfor %} 
+    </div>
+    {% include 'partials/page_navigator.html' %}
+
+{% endblock content %}

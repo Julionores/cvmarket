@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load blog_extras %}
+{% block content %}
+    <h2>Votre flux</h2>
+
+    <div class="grid-container">
+        {% for instance in page_obj %}
+            {% if instance|model_type == 'Cv' %}
+                {% include 'cvblog/partials/cv_snippet.html' with cv=instance %}
+            {% elif instance|model_type == 'Lettre' %}
+                {% include 'cvblog/partials/lettre_snippet.html' with lettre=instance %}
+            {% endif %}
+        {% endfor %} 
+    </div>
+    {% include 'partials/page_navigator.html' %}
+
+{% endblock content %}

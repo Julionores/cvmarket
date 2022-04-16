@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cvmarketstorage",
+  "private_key_id": "87a2b946f27bec123bdcbc06cb214b36801b3d75",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC6IO09VgLBwV2W\nYv4EcyIlfSC9VDkErk72dtEqH5LjqJeRtzbJC/0G5z02041ty8XT2R0tE6GYt4It\nj503mo5S+LWkuJITEh6FdqMI0pG2qtQrevO0h04HqXBt9v6ChinMRcU1TXc1cBW/\nt2YoWTTSuxPFZTFjKFiMQ1aRLNLlvDIEzIur098AvBgSniKhUFZyHjzNtPbx6Aql\nF17lufOAvjYO7BI0PfuLC2ii+nD1EqgA1ZAkgqpDvU6hP50kYmvJ/zjABreVmSt9\nmApKVfe1VgxGkI+g3bvDEqQoi7SUCLGZJkqTSctMhH/QMqwUg2p9O8LEMDH4mF4I\nUM7Q5vlRAgMBAAECggEAAQDU7of0Z1l0uO8LKfh55mRUhRi7XvJWlB8DVRwK9WWu\n/XbUmYRSRpOAAbflswIObKwmq1vH+vQARGEaCpbvbfSPvBXPmcE2/2aqjc1ewjKN\nBrf4sNAq5EEuTTVv3UG+X26/15/1hMj4IQqqxwxmC72850s6lyt8QLNLN+ibMWhO\nKcBJN5EBdkEowmLMs3gb5w7rMzdgl/BxBugm4IsPICWqdVMke+8VdQ8Vge+lXmR3\n7wLLDAng4f6EIlyePUOMnrULLYL8cyINsRXKY28ooV4Bv7FGP8+0CRJ+jeQYgYao\nK07tIwyzRTYz1OhwDbybA30SKIHwF07KWZYXTiLxAQKBgQDzSNkXSAVUHHjJV6pl\nehsEYfsU2ATxNgpNQuAg8k7amk4fs5nGqAoTT/uTAChcwVdhlFYNhFlnRG+6q8T1\n8LnUfLLg3m4d9ZerDXcIMapMINUGWr83guuxN1qm2WcjPAJPoD7rIVTQkUNYSyxe\nE/42Z2qalwTqsXbPdWyCFf2HQQKBgQDD21TEwds0SF1i/Tgo8ETQOHzU4j7tC70n\nHlOpbWUtZ5XgX5i6u81w6gv7TkgqRw3V7d+sDjA0DVOlE+ou/LwPmOkkkZRHpc0W\niA6MK3qGa6Pn4gR6S/+PJbIZp89PIHeoHLULwoQ87I3ChnXBSLGXTQOZLDGMTwHr\nD/H3ab9+EQKBgHYP2CpQLSXQW116SZrNUuchlXNcEantC7rKxXG3pUS4tUj1I58g\nVSNiITgJT40T1o/oKIqOu8Q9lesFCKRBmizgBv7RcqbfVCcSdb1oPLiNBlP7HeiW\nhEKQFlH6Fu8mZAi4P1Bj8ID2vbPPZ0yQb0F/lmBHAX/Td1DeLzZB7bMBAoGAWWaV\npBaFE7Fwh03kw7MhBhayzI3VgWiZV/Dc6XqY84fT/w5D7gDpvv/mpjjOchXq99rT\n/XqggDIRG0oi3H3a7hezXFDjaW0CV6WVVmBGVnNt5tvhhV2JcvMW/+T8mTbNx7wK\n3CpXKGQmNUQhHjAreE/cM5/bohsyWfT2UyQ/F7ECgYEAs1IOIN4imXa8gwQhSFx5\nYeSYMywpKKwzM9JMgqiI3SfCOyPlr0hJqEayfY1kjiuJ9Bq9D0y1oFIoR90k7g9I\n0BYvkwYU+/XARLYAjjneWD89iqRN2V2Ryjo4vAY0gnZekA66OlqYHqsJG/whuZj8\nQYr9mcCTxuzsbJVIsoxRCTw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cvmarketcloud@cvmarketstorage.iam.gserviceaccount.com",
+  "client_id": "110915352731047903325",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cvmarketcloud%40cvmarketstorage.iam.gserviceaccount.com"
+}

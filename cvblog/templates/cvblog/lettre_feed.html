@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Flux de lettre de motivation</h2>
+    <div class="grid-container">
+        {% for lettre in page_obj %}
+            {% include 'cvblog/partials/lettre_snippet.html' %}
+        {% endfor %}
+    </div>
+    {% include 'partials/page_navigator.html' %}
+{% endblock content %}
